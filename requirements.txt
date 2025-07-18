@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+ollama
+pytesseract
+python-multipart
+whisper
+PyMuPDF
+gTTS
+Pillow

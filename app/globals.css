@@ -1,0 +1,42 @@
+/* frontend/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-white font-sans min-h-screen transition-colors duration-300;
+}
+
+.container {
+  @apply max-w-3xl mx-auto px-4 py-8;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  @apply text-accent hover:underline transition-colors duration-200;
+}
+
+button, input, textarea, select {
+  @apply rounded bg-secondary text-white px-4 py-2 my-2 focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-200;
+}
+
+/* Light mode overrides */
+html:not(.dark) body {
+  @apply bg-white text-gray-900;
+}
+html:not(.dark) .container {
+  @apply bg-gray-50;
+}
+html:not(.dark) button, html:not(.dark) input, html:not(.dark) textarea, html:not(.dark) select {
+  @apply bg-gray-200 text-gray-900;
+}
